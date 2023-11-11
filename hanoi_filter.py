@@ -14,6 +14,6 @@ with open('VN_weather.csv', 'r') as csvfile:
 with open('Hanoi_weather.csv', 'w', newline='') as outfile:
     writer = csv.writer(outfile)
     # write a row to the CSV file
-    writer.writerow(['province', 'max', 'min', 'wind', 'rain', 'humidi',	'cloud', 'pressure', 'date'])
+    writer.writerow(['province', 'max', 'min', 'wind', 'rain', 'humidi', 'cloud', 'pressure', 'date'])
     # write rows to the CSV file
     writer.writerows(filtered_data)
